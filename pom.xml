@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>at.fhv.sa.ue2</groupId>
+    <artifactId>ue2.imageprocessing</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <jdk.version>1.8</jdk.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>at.fhv.jai</groupId>
+            <artifactId>jai.core</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${project.basedir}/src/main/resources/jai_core.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>at.fhv.jai</groupId>
+            <artifactId>jai.codec</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${project.basedir}/src/main/resources/jai_codec.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>at.fhv.jai</groupId>
+            <artifactId>jai.mlibwrapper</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${project.basedir}/src/main/resources/mlibwrapper_jai.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+</project>
