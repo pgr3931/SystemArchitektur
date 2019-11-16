@@ -98,7 +98,7 @@ public class CalcCentroidsFilter extends DataTransformationFilter2<PlanarImage, 
 			int xMedian = xValues.get(xValues.size() / 2);
 			int yMedian = yValues.get(yValues.size() / 2);
 
-			centroids.add(new Coordinate(xMedian + (Integer) _image.getProperty("offsetX"), yMedian + (Integer) _image.getProperty("offsetY")));
+			centroids.add(new Coordinate(xMedian + (Integer) _image.getTileGridXOffset(), yMedian + (Integer) _image.getTileGridYOffset()));
 
 			i++;
 		}

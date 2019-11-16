@@ -1,6 +1,7 @@
 package solution;
 
 import com.sun.media.jai.widget.DisplayJAI;
+import dataContainers.Coordinate;
 import pmp.filter.Sink;
 import pmp.interfaces.Readable;
 
@@ -11,22 +12,21 @@ import java.awt.*;
 import java.io.File;
 import java.io.StreamCorruptedException;
 import java.security.InvalidParameterException;
+import java.util.ArrayList;
 
-public class TestSink extends Sink<PlanarImage> {
+public class TestSink extends Sink<ArrayList<Coordinate>> {
 
 
-    public TestSink(Readable<PlanarImage> input) throws InvalidParameterException {
+    public TestSink(Readable<ArrayList<Coordinate>> input) throws InvalidParameterException{
         if (input == null){
             throw new InvalidParameterException("input filter can't be null!");
         }
         m_Input = input;
     }
 
-    public void write(PlanarImage image) throws StreamCorruptedException {
-        try {
-          Window.show(image);
-        }catch (Exception e){
-            throw new StreamCorruptedException(e.getMessage());
+    public void write(ArrayList<Coordinate> data) throws StreamCorruptedException {
+        for (Coordinate coordinate : data) {
+            System.out.println("X: " + coordinate._x + " Y: " + coordinate._y);
         }
     }
 }

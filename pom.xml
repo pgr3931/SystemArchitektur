@@ -37,6 +37,14 @@
             <version>1.0</version>
             <systemPath>${project.basedir}/src/main/resources/mlibwrapper_jai.jar</systemPath>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jaitools/jt-utils -->
+        <dependency>
+            <groupId>org.jaitools</groupId>
+            <artifactId>jt-utils</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+
+
     </dependencies>
 
 </project>
