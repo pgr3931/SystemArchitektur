@@ -6,9 +6,9 @@ import javax.media.jai.PlanarImage;
 import javax.swing.*;
 import java.awt.*;
 
-public class Window {
+class Window {
 
-    public static void show(PlanarImage image){
+    static void show(PlanarImage image) {
         JFrame frame = new JFrame();
         frame.setTitle("DisplayJAI");
 
@@ -16,9 +16,9 @@ public class Window {
         contentPane.setLayout(new BorderLayout());
 
         DisplayJAI dj = new DisplayJAI(image);
-        contentPane.add(new JScrollPane(dj),BorderLayout.CENTER);
+        contentPane.add(new JScrollPane(dj), BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500,300);
+        frame.setSize(500, 300);
         frame.setVisible(true);
     }
 }

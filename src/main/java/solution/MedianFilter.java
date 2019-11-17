@@ -13,11 +13,11 @@ import java.awt.image.renderable.ParameterBlock;
 import java.security.InvalidParameterException;
 
 public class MedianFilter extends DataTransformationFilter2<PlanarImage, PlanarImage> {
-    public MedianFilter(Readable<PlanarImage> input) throws InvalidParameterException {
+    MedianFilter(Readable<PlanarImage> input) throws InvalidParameterException {
         super(input);
     }
 
-    public MedianFilter(Writeable<PlanarImage> output) throws InvalidParameterException {
+    MedianFilter(Writeable<PlanarImage> output) throws InvalidParameterException {
         super(output);
     }
 

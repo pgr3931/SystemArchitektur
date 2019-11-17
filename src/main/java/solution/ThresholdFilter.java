@@ -9,11 +9,11 @@ import java.awt.image.BufferedImage;
 import java.security.InvalidParameterException;
 
 public class ThresholdFilter extends DataTransformationFilter2<PlanarImage, PlanarImage> {
-    public ThresholdFilter(Readable<PlanarImage> input) throws InvalidParameterException {
+    ThresholdFilter(Readable<PlanarImage> input) throws InvalidParameterException {
         super(input);
     }
 
-    public ThresholdFilter(Writeable<PlanarImage> output) throws InvalidParameterException {
+    ThresholdFilter(Writeable<PlanarImage> output) throws InvalidParameterException {
         super(output);
     }
 

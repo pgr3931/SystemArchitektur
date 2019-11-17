@@ -9,19 +9,16 @@ import javax.media.jai.JAI;
 import javax.media.jai.KernelJAI;
 import javax.media.jai.PlanarImage;
 import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.DilateDescriptor;
-import javax.media.jai.operator.ErodeDescriptor;
-import javax.media.jai.operator.MedianFilterDescriptor;
 import java.awt.image.BufferedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.security.InvalidParameterException;
 
 public class BallsFilter extends DataTransformationFilter2<PlanarImage, PlanarImage> {
-    public BallsFilter(Readable<PlanarImage> input) throws InvalidParameterException {
+    BallsFilter(Readable<PlanarImage> input) throws InvalidParameterException {
         super(input);
     }
 
-    public BallsFilter(Writeable<PlanarImage> output) throws InvalidParameterException {
+    BallsFilter(Writeable<PlanarImage> output) throws InvalidParameterException {
         super(output);
     }
 
